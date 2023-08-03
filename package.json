@@ -24,9 +24,9 @@
         "react-native-ratings": "^8.1.0",
         "react-native-safe-area-context": "^4.7.1",
         "react-native-screens": "^3.21.0",
-        "react-native-vector-icons": "^9.2.0",
+        "react-native-vector-icons": "^10.0.0",
         "react-redux": "^8.0.2",
-        "realm": "^10.19.5",
+        "realm": "^11.3.2",
         "redux-logger": "^3.0.6",
         "redux-persist": "^6.0.0",
         "styled-components": "^5.3.5"

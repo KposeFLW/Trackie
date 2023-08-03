@@ -1546,10 +1546,19 @@
   dependencies:
     nanoid "^3.1.23"
 
-"@realm.io/common@^0.1.4":
+"@realm/common@^0.1.4":
   version "0.1.4"
-  resolved "https://registry.npmjs.org/@realm.io/common/-/common-0.1.4.tgz"
-  integrity sha512-+nI/fOa/G9idiZ7h9DVz5NmnrvVNI3AM/I0eB7vL/PxDCF8vH3vew8ZrWOSr08GT2bDliy1wB6IYRqezQ1H/Iw==
+  resolved "https://registry.npmjs.org/@realm/common/-/common-0.1.4.tgz"
+  integrity sha512-bKpIRZIQ4ykribFi0igCwuvf7P4+Ex2XYKqDw1JDe6sCGAaPMwhazooyM6h32fUjtXRTbdAWH2S9JH8Xh/LrqQ==
+
+"@realm/network-transport@^0.7.2":
+  version "0.7.2"
+  resolved "https://registry.npmjs.org/@realm/network-transport/-/network-transport-0.7.2.tgz"
+  integrity sha512-IZ6yd+mGOYvSMVEVFf/v5qtZOi8bk4ZBxoj25GNQFyeFKxOs1WH+z4IDZscMC2GhQ4hdmI3Sg+RUEphimtHupQ==
+  dependencies:
+    "@realm/common" "^0.1.4"
+    abort-controller "^3.0.0"
+    node-fetch "^2.6.0"
 
 "@reduxjs/toolkit@^1.8.3":
   version "1.8.3"
@@ -5582,10 +5591,10 @@ react-native-screens@^3.21.0:
     react-freeze "^1.0.0"
     warn-once "^0.1.0"
 
-react-native-vector-icons@^9.2.0:
-  version "9.2.0"
-  resolved "https://registry.npmjs.org/react-native-vector-icons/-/react-native-vector-icons-9.2.0.tgz"
-  integrity sha512-wKYLaFuQST/chH3AJRjmOLoLy3JEs1JR6zMNgTaemFpNoXs0ztRnTxcxFD9xhX7cJe1/zoN5BpQYe7kL0m5yyA==
+react-native-vector-icons@^10.0.0:
+  version "10.0.0"
+  resolved "https://registry.npmjs.org/react-native-vector-icons/-/react-native-vector-icons-10.0.0.tgz"
+  integrity sha512-efMOVbZIebY8RszZPzPBoXi9pvD/NFYmjIDYxRoc9LYSzV8rMJtT8FfcO2hPu85Rn2x9xktha0+qn0B7EqMAcQ==
   dependencies:
     prop-types "^15.7.2"
     yargs "^16.1.1"
@@ -5709,20 +5718,13 @@ readline@^1.3.0:
   resolved "https://registry.npmjs.org/readline/-/readline-1.3.0.tgz"
   integrity sha512-k2d6ACCkiNYz222Fs/iNze30rRJ1iIicW7JuX/7/cozvih6YCkFZH+J6mAFDVgv0dRBaAyr4jDqC95R2y4IADg==
 
-realm-network-transport@^0.7.2:
-  version "0.7.2"
-  resolved "https://registry.npmjs.org/realm-network-transport/-/realm-network-transport-0.7.2.tgz"
-  integrity sha512-/5/YtZ5+ZIHIPgVFL6fRyx0/FRhmMaaF7L/h+iU8VKWGzesiBusSaeInosrM6v8MQvsW3W9ApBCeUwNW6m+8sg==
+realm@^11.3.2:
+  version "11.3.2"
+  resolved "https://registry.npmjs.org/realm/-/realm-11.3.2.tgz"
+  integrity sha512-bEO0C+tfdfAuc1Qpdr6shN77INwLtV/zVsy8SeY2vNiLx+YB8ure4IpiAEkzNEGpTC+x9CGszBgzx6EOx8bvJQ==
   dependencies:
-    abort-controller "^3.0.0"
-    node-fetch "^2.6.0"
-
-realm@^10.19.5:
-  version "10.24.0"
-  resolved "https://registry.npmjs.org/realm/-/realm-10.24.0.tgz"
-  integrity sha512-r+WCHMyRiNszHkWwmTG7+x2rdZNgdXXcEWoivei0Fh1DtXcwIBToo/qlAktjxt/9K9aLxCU9eIOeZcbeU+Utaw==
-  dependencies:
-    "@realm.io/common" "^0.1.4"
+    "@realm/common" "^0.1.4"
+    "@realm/network-transport" "^0.7.2"
     bindings "^1.5.0"
     bson "4.4.1"
     command-line-args "^5.1.1"
@@ -5735,7 +5737,6 @@ realm@^10.19.5:
     prebuild-install "^7.0.1"
     progress "^2.0.3"
     prop-types "^15.6.2"
-    realm-network-transport "^0.7.2"
     request "^2.88.0"
     stream-counter "^1.0.0"
     sync-request "^3.0.1"
